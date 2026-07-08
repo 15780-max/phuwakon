@@ -173,3 +173,132 @@ nav {
     }
 
 }
+{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:Arial;
+
+}
+
+body{
+
+    background:#f7f2ee;
+
+    min-height:100vh;
+
+}
+
+/* Navbar */
+
+nav{
+
+    background:#f5cbd3;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+nav ul li{
+
+    margin-left:40px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:bold;
+
+}
+
+nav ul li a:hover{
+
+    color:#ff3f7f;
+
+}
+
+/* Hero */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px 8%;
+
+}
+
+.text{
+
+    width:50%;
+
+}
+
+.text h1{
+
+    font-size:55px;
+
+    color:#333;
+
+}
+
+.text h2{
+
+    color:#ff3f7f;
+
+    margin:20px 0;
+
+}
+
+.text p{
+
+    color:#666;
+
+    line-height:30px;
+
+    margin-bottom:30px;
+
+}
+
+.btn{
+
+    background:#ff3f7f;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px...
