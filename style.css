@@ -1,0 +1,238 @@
+/* ===== Space Portfolio Theme ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(5, 10, 30, 0.65),
+            rgba(20, 10, 50, 0.75)
+        ),
+        url("images/3d-abstract-space-background-with-wireframe-landscape_1048-10648.avif");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* ===== Navigation ===== */
+
+nav {
+    padding: 20px;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,229,255,0.4);
+}
+
+nav a {
+    color: #00e5ff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff00ff;
+    text-shadow:
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff;
+}
+
+
+/* ===== Content Box ===== */
+
+.box {
+
+    width: 85%;
+    max-width: 850px;
+
+    margin: 60px auto;
+
+    padding: 35px;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(0,229,255,0.4);
+
+    box-shadow:
+        0 0 25px rgba(0,229,255,0.3);
+
+    animation: show 1s ease;
+}
+
+
+/* ===== Title ===== */
+
+h1 {
+
+    font-size: 45px;
+
+    color:#00e5ff;
+
+    text-shadow:
+        0 0 10px #00e5ff,
+        0 0 30px #0077ff;
+}
+
+
+h2 {
+
+    color:#ffffff;
+
+}
+
+
+/* ===== Text ===== */
+
+p {
+
+    font-size:20px;
+
+    color:#e2e8f0;
+
+}
+
+
+/* ===== Profile Image ===== */
+
+.profile-img {
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #00e5ff;
+
+    box-shadow:
+        0 0 20px #00e5ff,
+        0 0 50px #7c3aed;
+
+    transition:0.5s;
+
+}
+
+
+.profile-img:hover {
+
+    transform:scale(1.1)
+    rotate(5deg);
+
+}
+
+
+/* ===== Button ===== */
+
+.btn {
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 30px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            45deg,
+            #0066ff,
+            #b000ff
+        );
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    box-shadow:
+        0 0 20px #7c3aed;
+
+    transition:0.3s;
+
+}
+
+
+.btn:hover {
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 0 35px #00e5ff;
+
+}
+
+
+/* ===== Animation ===== */
+
+@keyframes show {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ===== Mobile ===== */
+
+@media(max-width:600px){
+
+    nav a{
+
+        display:block;
+
+        margin:10px;
+
+    }
+
+
+    h1{
+
+        font-size:32px;
+
+    }
+
+
+    .box{
+
+        width:90%;
+
+        padding:20px;
+
+    }
+
+}
