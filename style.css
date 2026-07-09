@@ -1,6 +1,6 @@
 body{
     margin:0;
-    font-family:Tahoma;
+    font-family:Tahoma, sans-serif;
     background:#ffd6e5;
 }
 
@@ -13,7 +13,7 @@ body{
 
 .card{
     background:white;
-    width:500px;
+    width:600px;
     text-align:center;
     padding:40px;
     border-radius:30px;
@@ -21,19 +21,26 @@ body{
 }
 
 .profile{
-    width:180px;
-    height:180px;
+    width:200px;
+    height:200px;
     border-radius:50%;
     object-fit:cover;
     border:8px solid #ff8db3;
+    margin-bottom:20px;
 }
 
 h1{
     color:#d63384;
+    margin-bottom:10px;
 }
 
 h2{
     color:#d63384;
+}
+
+p{
+    color:#555;
+    font-size:18px;
 }
 
 .menu{
@@ -48,4 +55,9 @@ h2{
     color:white;
     text-decoration:none;
     border-radius:15px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    background:#e63e85;
 }
