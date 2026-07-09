@@ -1,131 +1,46 @@
+html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio นายภูวกร ไชยเหมาะ</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
 
-{
+<header>
+<h1>Portfolio</h1>
 
-    margin:0;
+<nav>
+<a href="index.html">หน้าหลัก</a>
+<a href="profile.html">ประวัติส่วนตัว</a>
+<a href="education.html">ประวัติการศึกษา</a>
+<a href="award.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
+</nav>
+</header>
 
-    padding:0;
+<div class="container">
+<div class="card">
 
-    box-sizing:border-box;
+<img src="Images/ghost-8250317_1280.png" class="profile" alt="Profile">
 
-    font-family:Arial;
+<h2>นายภูวกร ไชยเหมาะ</h2>
 
-}
+<h3>นักเรียนชั้นมัธยมศึกษาปีที่ 6/1</h3>
 
-body{
+<p> โรงเรียนพานทอง</p>
 
-    background:#f7f2ee;
 
-    min-height:100vh;
 
-}
+</div>
+</div>
 
-/* Navbar */
+<footer>
+Portfolio © 2026 นายภูวกร ไชยเหมาะ
+</footer>
 
-nav{
-
-    background:#f5cbd3;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:20px 8%;
-
-}
-
-.logo{
-
-    font-size:30px;
-
-    font-weight:bold;
-
-}
-
-nav ul{
-
-    display:flex;
-
-    list-style:none;
-
-}
-
-nav ul li{
-
-    margin-left:40px;
-
-}
-
-nav ul li a{
-
-    text-decoration:none;
-
-    color:#333;
-
-    font-weight:bold;
-
-}
-
-nav ul li a:hover{
-
-    color:#ff3f7f;
-
-}
-
-/* Hero */
-
-.hero{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:80px 8%;
-
-}
-
-.text{
-
-    width:50%;
-
-}
-
-.text h1{
-
-    font-size:55px;
-
-    color:#333;
-
-}
-
-.text h2{
-
-    color:#ff3f7f;
-
-    margin:20px 0;
-
-}
-
-.text p{
-
-    color:#666;
-
-    line-height:30px;
-
-    margin-bottom:30px;
-
-}
-
-.btn{
-
-    background:#ff3f7f;
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:15px...
+</body>
+</html>
