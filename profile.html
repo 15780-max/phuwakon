@@ -2,9 +2,14 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ประวัติส่วนตัว</title>
 
     <style>
+        *{
+            box-sizing: border-box;
+        }
+
         body{
             margin: 0;
             min-height: 100vh;
@@ -13,10 +18,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 20px;
         }
 
         .box{
-            width: 80%;
+            width: 100%;
             max-width: 800px;
             background: rgba(255,255,255,0.9);
             padding: 30px;
@@ -26,13 +32,28 @@
             color: #333;
         }
 
-        img{
-            width: 200px;
-            height: 200px;
+        .profile{
+            width: 220px;
+            height: 220px;
             border-radius: 50%;
-            border: 5px solid #ffffff;
             object-fit: cover;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: 5px solid white;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            animation: float 3s ease-in-out infinite;
+            transition: transform 0.3s;
+        }
+
+        .profile:hover{
+            transform: scale(1.08);
+        }
+
+        @keyframes float{
+            0%,100%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-10px);
+            }
         }
 
         h1{
@@ -69,7 +90,9 @@
 
 <div class="box">
 
-    <img src="images/IMG-9139.jpg" alt="รูปนายภูวกร ไชยเหมาะ">
+    <img src="images/IMG-9139.jpg"
+         class="profile"
+         alt="รูปนายภูวกร ไชยเหมาะ">
 
     <h1>👤 ประวัติส่วนตัว</h1>
 
@@ -79,8 +102,8 @@
     <p><strong>อายุ :</strong> 18 ปี</p>
     <p><strong>กำลังศึกษา :</strong> ชั้นมัธยมศึกษาปีที่ 6/1</p>
     <p><strong>โรงเรียน :</strong> โรงเรียนพานทอง</p>
-    <p><strong>งานอดิเรก :</strong>เล่นกีฬา ฟังเพลง ดูหนัง นอน</p>
-    <p><strong>ความสามารถพิเศษ :</strong> เล่นกีฬาได้ทุกชนิด_</p>
+    <p><strong>งานอดิเรก :</strong> เล่นกีฬา ฟังเพลง ดูหนัง นอน</p>
+    <p><strong>ความสามารถพิเศษ :</strong> เล่นกีฬาได้ทุกชนิด</p>
 
     <a href="index.html">⬅ กลับหน้าหลัก</a>
 
