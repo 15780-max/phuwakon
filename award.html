@@ -1,101 +1,62 @@
-<!DOCTYPE html>
-<html lang="th">
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    color: #333;
+}
 
-<head>
-    <meta charset="UTF-8">
+nav{
+    text-align: center;
+    padding: 20px;
+}
 
-    <title>ผลงาน | Portfolio</title>
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-    <link rel="stylesheet" href="style.css">
+.box{
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
 
-</head>
+h1{
+    color: #1e3a8a;
+}
 
+.card{
+    background: rgba(255, 255, 255, 0.95);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
-<body>
+.card h2{
+    color: #2563eb;
+}
 
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
 
-<nav>
-
-    <a href="index.html">หน้าหลัก</a>
-
-    <a href="profile.html">ประวัติส่วนตัว</a>
-
-    <a href="education.html">การศึกษา</a>
-
-    <a href="award.html">ผลงาน</a>
-
-    <a href="contact.html">ติดต่อ</a>
-
-</nav>
-
-
-
-<div class="box">
-
-
-    <h1>🏆 ผลงานและรางวัล</h1>
-
-
-    <p>
-        รวมผลงาน กิจกรรม และประสบการณ์ต่าง ๆ
-    </p>
-
-
-
-    <div class="card">
-
-
-        <h2>🥇 ผลงานที่ 1</h2>
-
-        <p>
-            เข้าร่วมกิจกรรมและการแข่งขันของโรงเรียน
-        </p>
-
-
-    </div>
-
-
-
-    <div class="card">
-
-
-        <h2>🚀 ผลงานที่ 2</h2>
-
-        <p>
-            ผลงานด้านเทคโนโลยีและการสร้างเว็บไซต์
-        </p>
-
-
-    </div>
-
-
-
-    <div class="card">
-
-
-        <h2>🌟 ผลงานที่ 3</h2>
-
-        <p>
-            กิจกรรมจิตอาสาและกิจกรรมภายในโรงเรียน
-        </p>
-
-
-    </div>
-
-
-
-    <br>
-
-
-    <a class="btn" href="index.html">
-        ⬅ กลับหน้าหลัก
-    </a>
-
-
-</div>
-
-
-
-</body>
-
-</html>
+.btn:hover{
+    transform: scale(1.05);
+}
