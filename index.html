@@ -32,5 +32,34 @@
     </div>
 </div>
 
+</body><body>
+
+    <!-- เนื้อหาเว็บของตอง -->
+    <div class="container">
+        ...
+    </div>
+
+    <!-- วางโค้ดหิมะตรงนี้ -->
+    <div class="snow"></div>
+
+    <script>
+    function createSnow() {
+        const snow = document.createElement("span");
+        snow.classList.add("snowflake");
+
+        snow.style.left = Math.random() * window.innerWidth + "px";
+        snow.style.animationDuration = Math.random() * 3 + 2 + "s";
+        snow.style.opacity = Math.random();
+
+        document.body.appendChild(snow);
+
+        setTimeout(() => {
+            snow.remove();
+        }, 5000);
+    }
+
+    setInterval(createSnow, 150);
+    </script>
+
 </body>
 </html>
