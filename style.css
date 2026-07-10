@@ -51,7 +51,7 @@ p{
     display:inline-block;
     margin:10px;
     padding:12px 20px;
-    background:#ff4f9a;
+    background:linear-gradient(to bottom, #87CEFA, #1E90FF);
     color:white;
     text-decoration:none;
     border-radius:15px;
