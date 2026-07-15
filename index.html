@@ -4,14 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio นายภูวกร ไชยเหมาะ</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            min-height:100vh;
+            font-family:Arial,sans-serif;
+            background:linear-gradient(135deg,#001F54,#1565C0,#42A5F5,#90CAF9);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            overflow:hidden;
+        }
+
+        .container{
+            width:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
+
+        .card{
+            width:420px;
+            background:rgba(255,255,255,.15);
+            backdrop-filter:blur(15px);
+            border-radius:25px;
+            padding:35px;
+            text-align:center;
+            color:#fff;
+            box-shadow:0 15px 35px rgba(0,0,0,.3);
+        }
+
+        .profile{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            object-fit:cover;
+            border:6px solid #fff;
+            margin-bottom:20px;
+        }
+
+        h1{
+            font-size:40px;
+            margin-bottom:8px;
+        }
+
+        h2{
+            margin-bottom:15px;
+        }
+
+        p{
+            margin:5px 0;
+        }
+
+        .menu{
+            margin-top:30px;
+            display:flex;
+            flex-direction:column;
+            gap:15px;
+        }
+
+        .menu a{
+            text-decoration:none;
+            background:#fff;
+            color:#1565C0;
+            padding:15px;
+            border-radius:12px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .menu a:hover{
+            background:#1565C0;
+            color:#fff;
+            transform:translateY(-3px);
+        }
+
+        .snowflake{
+            position:fixed;
+            top:-10px;
+            width:8px;
+            height:8px;
+            background:white;
+            border-radius:50%;
+            pointer-events:none;
+            animation:fall linear forwards;
+        }
+
+        @keyframes fall{
+            to{
+                transform:translateY(110vh);
+            }
+        }
+    </style>
 </head>
+
 <body>
 
 <div class="container">
     <div class="card">
 
-        <!-- รูปโปรไฟล์ -->
         <img src="https://i.ibb.co/h1Xdvd5p/IMG-9139.jpg"
              class="profile"
              alt="รูปนายภูวกร ไชยเหมาะ">
@@ -32,34 +130,24 @@
     </div>
 </div>
 
-</body><body>
+<script>
+function createSnow() {
+    const snow = document.createElement("span");
+    snow.classList.add("snowflake");
 
-    <!-- เนื้อหาเว็บของตอง -->
-    <div class="container">
-        ...
-    </div>
+    snow.style.left = Math.random() * window.innerWidth + "px";
+    snow.style.animationDuration = (Math.random() * 3 + 2) + "s";
+    snow.style.opacity = Math.random();
 
-    <!-- วางโค้ดหิมะตรงนี้ -->
-    <div class="snow"></div>
+    document.body.appendChild(snow);
 
-    <script>
-    function createSnow() {
-        const snow = document.createElement("span");
-        snow.classList.add("snowflake");
+    setTimeout(() => {
+        snow.remove();
+    }, 5000);
+}
 
-        snow.style.left = Math.random() * window.innerWidth + "px";
-        snow.style.animationDuration = Math.random() * 3 + 2 + "s";
-        snow.style.opacity = Math.random();
-
-        document.body.appendChild(snow);
-
-        setTimeout(() => {
-            snow.remove();
-        }, 5000);
-    }
-
-    setInterval(createSnow, 150);
-    </script>
+setInterval(createSnow, 150);
+</script>
 
 </body>
 </html>
